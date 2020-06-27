@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "apli-frontend"
+    }
+  },
+  "defaultProject": "apli-frontend",
+  "cli": {
+    "analytics": false
+  }
 }
