@@ -43,7 +43,6 @@ export class FinalResultsComponent implements OnInit, OnChanges {
     }
     console.warn("data source: ", this.dataSource);
     this.tableLoaded = true;
-
   }
 
 }
