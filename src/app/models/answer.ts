@@ -1,5 +1,6 @@
 export interface Answer {
     videoURL: string,
     comment: string,
-    rating: number
+    rating: number,
+    question: string
 }

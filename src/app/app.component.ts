@@ -18,9 +18,10 @@ export class AppComponent {
 
     constructor() {
       this.fetchUserDetails();
-      this.fetchCandidateDetails;
-      this.fetchCandidateDetails;
+      this.fetchCandidateDetails();
+      this.fetchAnswers();
       this.activeQuestionIndex = 0;
+      console.warn("answers", this.answers);
     }
 
     fetchUserDetails(): void {
@@ -38,13 +39,13 @@ export class AppComponent {
     }
 
     fetchAnswers(): void {
-      this.answers = 
+      this.answers =
         [
-          { videoURL: "", comment: "", rating: 0},
-          { videoURL: "", comment: "", rating: 0},
-          { videoURL: "", comment: "", rating: 0},
-          { videoURL: "", comment: "", rating: 0},
-          { videoURL: "", comment: "", rating: 0}
+          { videoURL: "", comment: "", rating: 0, question: "question one"},
+          { videoURL: "", comment: "", rating: 0, question: "question two"},
+          { videoURL: "", comment: "", rating: 0, question: "question three"},
+          { videoURL: "", comment: "", rating: 0, question: "question four"},
+          { videoURL: "", comment: "", rating: 0, question: "question five"}
         ];
     }
 
@@ -52,6 +53,6 @@ export class AppComponent {
       this.activeQuestionIndex = newIndex;
     }
 
-    
+
 
 }
